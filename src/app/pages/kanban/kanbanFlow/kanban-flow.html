@@ -1,0 +1,28 @@
+<div class="kanban-board">
+    <ul data-as-sortable="board.dragControlListeners" data-ng-model="items">
+        <li data-ng-repeat="item in items" data-as-sortable-item>
+            <div data-as-sortable-item-handle>
+                <div class="kanban-postit">
+                    <div class="panel animated zoomIn" >
+                        <div class="kanban-box">
+                            <div class="kanban-ptop">
+                                <div class="pull-left"> {{item.number}} </div>
+                                <div class="pull-right">{{item.points}}</div>
+                                <div style="clear: both"></div>
+                            </div>
+                            <div class="kanban-title">
+                                {{ item.title }}
+                            </div>
+                            <div class="kanban-pbottom">
+                                <div class="pull-left"> {{item.dev}} </div>
+                                <div class="pull-right">{{item.date}}</div>
+                            </div>
+                            <div style="clear: both"></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </li>
+    </ul>
+</div>

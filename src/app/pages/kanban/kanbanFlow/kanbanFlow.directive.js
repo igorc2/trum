@@ -5,15 +5,15 @@
 (function () {
     'use strict';
 
-    angular.module('BlurAdmin.pages.dashboard')
+    angular.module('BlurAdmin.pages.kanban')
         .directive('kanbanFlow', kanbanFlow);
 
     /** @ngInject */
     function kanbanFlow() {
         return {
             restrict: 'E',
-            controller: 'kanbanFlowCtrl',
-            templateUrl: 'app/pages/dashboard/trafficChart/kanban-flow.html'
+            controller: 'KanbanFlowCtrl',
+            templateUrl: 'app/pages/kanban/kanbanFlow/kanban-flow.html'
         };
     }
 })();

@@ -10,6 +10,7 @@
 
         'BlurAdmin.pages.dashboard',
         'BlurAdmin.pages.kanban',
+        'BlurAdmin.pages.backlog',
         'BlurAdmin.pages.ui',
         'BlurAdmin.pages.components',
         'BlurAdmin.pages.form',
