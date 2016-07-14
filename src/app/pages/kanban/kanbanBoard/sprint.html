@@ -29,8 +29,7 @@
                         class="glyphicon glyphicon-plus addNewCard"></i></a>
             </td>
             <td as-sortable="sprintSortOptions" ng-repeat="phase in backlog.phases" ng-model="phase.cards">
-                <div class="card" ng-repeat="card in phase.cards" as-sortable-item
-                     ng -include="card.html">
+                <div class="card" ng-repeat="card in phase.cards" as-sortable-item ng-include="card.html">
                 </div>
             </td>
         </tr>

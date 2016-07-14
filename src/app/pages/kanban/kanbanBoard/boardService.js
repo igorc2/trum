@@ -14,9 +14,6 @@ angular.module('BlurAdmin.pages.kanban').service('BoardService', ['$uibModal', '
         };
     }
 
-
-
-
     return {
         removeCard: function (board, column, card) {
             if (confirm('Are You sure to Delete?')) {
