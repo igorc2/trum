@@ -9,6 +9,7 @@ angular.module('BlurAdmin.pages.kanban')
 
     function KanbanBoardCtrl($scope, BoardService, BoardDataFactory) {
 
+       
         $scope.sprintBoard = BoardService.sprintBoard(BoardDataFactory.sprint);
 
         $scope.sprintSortOptions = {
