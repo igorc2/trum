@@ -23,7 +23,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                 {"title": "Come up with a POC for new Project",
                     "details": "backlog id 1",
                     "phases": [
-                        {"name": "Not started",
+                        {"name": "TO DO",
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -33,7 +33,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                     "status": "Not started"}
                             ]
                         },
-                        {"name": "Not started",
+                        {"name": "DEV DOING",
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -43,7 +43,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                     "status": "Not started"}
                             ]
                         },
-                        {"name": "Not started",
+                        {"name": "DEV DONE",
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -53,7 +53,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                     "status": "Not started"}
                             ]
                         },
-                        {"name": "Not started",
+                        {"name": "DEV IMPEDED",
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -63,7 +63,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                     "status": "Not started"}
                             ]
                         },
-                        {"name": "Not started",
+                        {"name": "TO DO TEST",
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -73,7 +73,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                     "status": "Not started"}
                             ]
                         },
-                        {"name": "In progress",
+                        {"name": "ERROR",
                             "cards": [
                                 {"title": "Develop ui for tracker module",
                                     "details": "Testing Card Details",
@@ -85,7 +85,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                     "details": "Testing Card Details",
                                     "status": "In progress"}
                             ]},
-                        {"name": "Done",
+                        {"name": "DONE",
                             "cards": [
                                 {"title": "End to End Testing for user group module",
                                     "details": "Testing Card Details",

@@ -39,6 +39,10 @@ angular.module('BlurAdmin.pages.kanban').factory('BoardManipulator', function ()
             board.columns.push(new Column(columnName));
         },
 
+        addCardToKanban: function(card){
+            angular.forEach(card)
+        },
+
         addCardToColumn: function (board, column, cardTitle, details) {
             angular.forEach(board.columns, function (col) {
                 if (col.name === column.name) {

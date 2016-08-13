@@ -1,14 +1,14 @@
-<div ng-model="sprintBoard" id="board">
+<div ng-model="sprintBoard" id="board" class='kanban-screen' style="max-width: 100%;">
 
     <table id="boardTable" class="table table-bordered">
         <thead>
-        <tr id="boardHeader">
-            <th style="text-align: left; width: 14%">
-                <span class="board-header">FEATURES</span>
+        <tr id="boardHeader" class="board-header">
+            <th style="text-align: left; width: 12.5%">
+                <span>FEATURES</span>
             </th>
-            <th ng-repeat="column in sprintBoard.columns" >
+            <th style="width: 12.5%" ng-repeat="column in sprintBoard.columns" >
                 <div>
-                    <span class="board-header"  style="width: 13%">{{column.name}}</span>
+                    <span  >{{column.name}}</span>
                 </div>
             </th>
         </tr>

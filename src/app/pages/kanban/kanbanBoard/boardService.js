@@ -14,6 +14,16 @@ angular.module('BlurAdmin.pages.kanban').service('BoardService', ['$uibModal', '
         };
     }
 
+    function KanbanBoard(name, numberOfColumns) {
+        return {
+            name: name,
+            numberOfColumns: numberOfColumns,
+            columns: [],
+            backlogs: [],
+            cards: []
+        };
+    }
+
     return {
         removeCard: function (board, column, card) {
             if (confirm('Are You sure to Delete?')) {
@@ -39,7 +49,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardService', ['$uibModal', '
             });
         },
         kanbanBoard: function (board) {
-            var kanbanBoard = new Board(board.name, board.numberOfColumns);
+            var kanbanBoard = new KanbanBoard(board.name, board.numberOfColumns);
             angular.forEach(board.columns, function (column) {
                 BoardManipulator.addColumn(kanbanBoard, column.name);
                 angular.forEach(column.cards, function (card) {

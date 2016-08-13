@@ -38,17 +38,16 @@
 .columnHeader,
 #board .table thead th {
   text-align: center;
-  background: #fafafa linear-gradient(to bottom, #ffffff, #f2f2f2) repeat-x;
-  padding: 5px 0;
-  font-size: 20px;
+  background: #244216 linear-gradient(to bottom, #23591a, #376b21) repeat-x;
+  padding: 15px 0;
+  font-size: 13px;
   font-weight: normal;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(112, 113, 48, 0.3);
   border-bottom: 1px solid #dddddd;
 }
 
 #board .table thead th:first-of-type {
   padding: 5px 10px 5px 20px;
-  white-space: nowrap;
 }
 
 #board .table thead {
@@ -226,4 +225,6 @@ div.task h3 {
 
 .board-header{
  font-size: 12px;
+  color: floralwhite;
+
 }
