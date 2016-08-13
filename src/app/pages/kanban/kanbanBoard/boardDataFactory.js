@@ -6,43 +6,18 @@
 angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function () {
 
     return {
-        kanban: {
-            "name": "Kanban Board",
-            "numberOfColumns": 4,
-            "columns": [
-                {"name": "Ideas", "cards": [
-                    {"title": "Come up with a POC for new Project"},
-                    {"title": "Design new framework for reporting module"}
-                ]},
-                {"name": "Not started", "cards": [
-                    {"title": "Explore new IDE for Development",
-                        "details": "Testing Card Details"},
-                    {"title": "Get new resource for new Project",
-                        "details": "Testing Card Details"}
-                ]},
-                {"name": "In progress", "cards": [
-                    {"title": "Develop ui for tracker module",
-                        "details": "Testing Card Details"},
-                    {"title": "Develop backend for plan module",
-                        "details": "Testing Card Details"}
-                ]},
-                {"name": "Done", "cards": [
-                    {"title": "Test user module",
-                        "details": "Testing Card Details"},
-                    {"title": "End to End Testing for user group module",
-                        "details": "Testing Card Details"},
-                    {"title": "CI for user module",
-                        "details": "Testing Card Details"}
-                ]}
-            ]
-        },
         sprint: {
             "name": "Sprint Board",
-            "numberOfColumns": 3,
+            "numberOfColumns": 7,
             "columns": [
-                {"name": "Not started"},
-                {"name": "In progress"},
-                {"name": "Done"}
+                {"name": "TO DO"},
+                {"name": "DEV DOING"},
+                {"name": "DEV DONE"},
+                {"name": "DEV IMPEDED"},
+                {"name": "TO DO TEST"},
+                {"name": "ERROR"},
+                {"name": "DONE"}
+
             ],
             "backlogs": [
                 {"title": "Come up with a POC for new Project",
@@ -56,7 +31,48 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                 {"title": "Get new resource for new Project",
                                     "details": "Testing Card Details",
                                     "status": "Not started"}
-                            ]},
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new IDE for Development",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new resource for new Project",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new IDE for Development",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new resource for new Project",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new IDE for Development",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new resource for new Project",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new IDE for Development",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new resource for new Project",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
                         {"name": "In progress",
                             "cards": [
                                 {"title": "Develop ui for tracker module",
@@ -92,7 +108,48 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                                 {"title": "Get new Testing License",
                                     "details": "Testing Card Details",
                                     "status": "Not started"}
-                            ]},
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new Framework",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new Testing License",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new Framework",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new Testing License",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new Framework",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new Testing License",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
+                        {"name": "Not started",
+                            "cards": [
+                                {"title": "Explore new Framework",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"},
+                                {"title": "Get new Testing License",
+                                    "details": "Testing Card Details",
+                                    "status": "Not started"}
+                            ]
+                        },
                         {"name": "In progress",
                             "cards": [
                                 {"title": "Develop ui using Angular",
@@ -110,38 +167,6 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                             ]}
                     ]
                 }
-            ]
-        },
-        block: {
-            "columns": [
-                {"name": "Ideas", "cards": [
-                    {"title": "Come up with a POC for new Project",
-                        "details": "Testing Card Details Testing Card Details Testing Card Details Testing Card Details"},
-                    {"title": "Design new framework for reporting module",
-                        "details": "Testing Card Details"},
-                    {"title": "Test user module",
-                        "details": "Testing Card Details"},
-                    {"title": "End to End Testing for user group module",
-                        "details": "Testing Card Details Testing Card Details Testing Card Details Testing Card Details Testing Card Details" +
-                        "Testing Card Details Testing Card Details Testing Card Details Testing Card Details Testing Card Details" +
-                        "Testing Card Details Testing Card Details Testing Card Details Testing Card Details Testing Card Details"},
-                    {"title": "CI for user module",
-                        "details": "Testing Card Details Testing Card Details Testing Card Details"}
-                ]},
-                {"name": "Not started", "cards": [
-                    {"title": "Explore new IDE for Development",
-                        "details": "Testing Card Details Testing Card Details Testing Card Details"},
-                    {"title": "Get new resource for new Project",
-                        "details": "Testing Card Details"},
-                    {"title": "Develop ui for tracker module",
-                        "details": "Testing Card Details Testing Card Details Testing Card Details Testing Card Details Testing Card" +
-                        "Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card" +
-                        "Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card" +
-                        "Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card" +
-                        "Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card Big Card"},
-                    {"title": "Develop backend for plan module",
-                        "details": "Testing Card Details"}
-                ]}
             ]
         }
     };

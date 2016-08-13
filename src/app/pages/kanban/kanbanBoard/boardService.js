@@ -48,6 +48,9 @@ angular.module('BlurAdmin.pages.kanban').service('BoardService', ['$uibModal', '
             });
             return kanbanBoard;
         },
+
+
+
         sprintBoard: function (board) {
             var sprintBoard = new Board(board.name, board.numberOfColumns);
             angular.forEach(board.columns, function (column) {
@@ -63,6 +66,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardService', ['$uibModal', '
                 });
 
             });
+
             return sprintBoard;
         }
     };

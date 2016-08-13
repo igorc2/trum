@@ -171,11 +171,9 @@ div.task h3 {
 }
 
 .card-title {
-  color: #7c9eb2;
   text-decoration: none;
-  font-weight: bold;
-  line-height: 1.5em;
-  padding: 2px 1px;
+  font-size: small;
+  line-height: 1.2em;
   display: block;
 }
 
@@ -199,14 +197,6 @@ div.task h3 {
   float: left;
 }
 
-/*.sortable-row:after {
-    content: ".";
-    display: block;
-    height: 0;
-    clear: both;
-    visibility: hidden;
-}*/
-
 #scrollable-container {
   position: absolute;
   top: 150px;
@@ -219,4 +209,21 @@ div.task h3 {
 
 .pre-scrollable .panel {
   margin-top: 20px;
+}
+
+.as-sortable-item-handle{
+
+  padding: 15px 5px;
+  color: #fff;
+
+
+}
+
+.card-title.btn{
+  border: 0px !important;
+  white-space: inherit !important;
+}
+
+.board-header{
+ font-size: 12px;
 }
