@@ -5,8 +5,7 @@
 
 angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function () {
 
-    return {
-        sprint: {
+     this.sprint = {
             "name": "Sprint Board",
             "numberOfColumns": 7,
             "columns": [
@@ -24,16 +23,16 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                     "details": "backlog id 1",
                     "phases": [
                         {"name": "TO DO",
+                            "id": 1,
                             "cards": [
-                                {"title": "Explore new IDE for Development",
-                                    "details": "Testing Card Details",
-                                    "status": "Not started"},
+
                                 {"title": "Get new resource for new Project",
                                     "details": "Testing Card Details",
                                     "status": "Not started"}
                             ]
                         },
                         {"name": "DEV DOING",
+                            "id": 2,
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -44,6 +43,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                             ]
                         },
                         {"name": "DEV DONE",
+                            "id": 3,
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -54,6 +54,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                             ]
                         },
                         {"name": "DEV IMPEDED",
+                            "id": 4,
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -64,6 +65,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                             ]
                         },
                         {"name": "TO DO TEST",
+                            "id": 5,
                             "cards": [
                                 {"title": "Explore new IDE for Development",
                                     "details": "Testing Card Details",
@@ -74,6 +76,7 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                             ]
                         },
                         {"name": "ERROR",
+                            "id": 6,
                             "cards": [
                                 {"title": "Develop ui for tracker module",
                                     "details": "Testing Card Details",
@@ -168,6 +171,8 @@ angular.module('BlurAdmin.pages.kanban').service('BoardDataFactory', function ()
                     ]
                 }
             ]
-        }
-    };
+        };
+
+    return this;
+
 });

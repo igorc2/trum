@@ -7,7 +7,7 @@
 angular.module('BlurAdmin.pages.kanban')
     .controller('KanbanBoardCtrl', KanbanBoardCtrl);
 
-    function KanbanBoardCtrl($scope, BoardService, BoardDataFactory) {
+    function KanbanBoardCtrl($scope, BoardService, BoardDataFactory, BoardManipulator) {
 
        
         $scope.sprintBoard = BoardService.sprintBoard(BoardDataFactory.sprint);
@@ -24,5 +24,12 @@ angular.module('BlurAdmin.pages.kanban')
             },
             containment: '#board'
         };
+        var card = {
+            title: "Fazer coisas bonitas",
+            details: "Testing Card Details",
+            status: "TO DO"
+        };
+
+        BoardManipulator.addCardToBacklog($scope.sprintBoard, "Come up with a POC for new Project", "TO DO", card);
     }
 })();
