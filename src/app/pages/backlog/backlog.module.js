@@ -16,6 +16,7 @@
                 url: '/backlog',
                 templateUrl: 'app/pages/backlog/backlog.html',
                 title: 'Sprint Backlog',
+                controller: 'BacklogPageCtrl',
                 sidebarMeta: {
                     icon: 'ion-android-home',
                     order: 220,
