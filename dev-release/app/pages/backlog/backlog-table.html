@@ -1,0 +1,39 @@
+<div class="horizontal-scroll">
+    <table class="table table-hover" st-table="backlogTableData">
+        <thead>
+        <tr class="sortable">
+            <th class="table-id" st-sort="id" st-sort-default="true">#</th>
+            <th st-sort="task">Atividade</th>
+            <th st-sort="description">Descrição</th>
+            <th st-sort="estimate">Esimativa</th>
+            <th st-sort="status">Status</th>
+            <th st-sort="dev">Desenvolvedor</th>
+            <th st-sort="tester">Tester</th>
+            <th st-sort="time">Tempo</th>
+            <th st-sort="error">Mantis</th>
+            <th st-sort="comments">Observação</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in backlogTableData" class="editable-tr-wrap">
+            <td class="table-id">{{item.id}}</td>
+            <td><span editable-text="item.task" blur="cancel">{{item.task}}</span></td>
+            <td><span editable-text="item.description" blur="cancel">{{item.description}}</span></td>
+            <td><span editable-text="item.estimate" blur="cancel">{{item.estimate}}</span></td>
+            <td><span editable-text="item.status" blur="cancel">{{item.status}}</span></td>
+            <td><span editable-text="item.dev" blur="cancel">{{item.dev}}</span></td>
+            <td><span editable-text="item.tester" blur="cancel">{{item.tester}}</span></td>
+            <td><span editable-text="item.time" blur="cancel">{{item.time}}</span></td>
+            <td><span editable-text="item.error" blur="cancel">{{item.error}}</span></td>
+            <td><span editable-text="item.comments" blur="cancel">{{item.comments}}</span></td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+            <td colspan="6" class="text-center">
+                <div st-pagination="" st-items-by-page="50" st-displayed-pages="5"></div>
+            </td>
+        </tr>
+        </tfoot>
+    </table>
+</div>

@@ -1,4 +1,4 @@
-/*jshint undef: false, unused: false, indent: 2*/
+/*jshint undef: false, unused: false, indent: 4*/
 /*global angular: false */
 
 'use strict';
